@@ -1,0 +1,73 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 50px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $font-OpenSans;
+  color: $goshawk-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $white;
+  border: 2px solid $goshawk-grey;
+  cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    padding: 16px 40px;
+
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  &--small-size {
+    font-size: 17px;
+    line-height: 16px;
+
+    @media (min-width: $vp-768) {
+      font-size: 17px;
+      line-height: 16px;
+    }
+  }
+
+  &--big-size {
+    font-size: 18px;
+    line-height: 16px;
+
+    @media (min-width: $vp-768) {
+      font-size: 17px;
+      line-height: 16px;
+    }
+  }
+
+  &:hover {
+    color: $white;
+
+    background-color: $goshawk-grey;
+
+    transition: 250ms;
+  }
+
+  &:focus {
+    color: $white;
+
+    background-color: $goshawk-grey;
+    outline: none;
+  }
+
+  &:active {
+    color: $namara-grey;
+
+    outline: none;
+  }
+
+  &:disabled {
+    color: $namara-grey;
+
+    background-color: $cold-morning;
+    border: none;
+  }
+}

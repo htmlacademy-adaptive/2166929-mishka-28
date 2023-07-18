@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
-* Студент: [Екатерина Юрчак](https://up.htmlacademy.ru/adaptive/28/user/2166929).
-* Наставник: `Неизвестно`.
+* Студент: [Екатерина Юрчак](https://htmlacademy.ru/profile/neonin).
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 

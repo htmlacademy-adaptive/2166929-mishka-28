@@ -1,0 +1,270 @@
+.contacts {
+  position: relative;
+
+  padding: 44px 0 39px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/svg/grey-pattern.svg");
+    background-size: 31px;
+    transform: translate(-50%, 0);
+
+    @media (min-width: $vp-768) {
+      height: 17px;
+
+      background-size: 77px;
+    }
+
+    @media (min-width: $vp-1150) {
+      max-width: 1050px;
+      height: 23px;
+
+      background-size: 105px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 85px 0 57px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 94px 0 105px 0;
+  }
+}
+
+.contacts__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @media (min-width: $vp-1150) {
+    display: grid;
+    padding: 0 50px;
+
+    column-gap: 55px;
+
+    grid-template-columns: 1fr 527px;
+    grid-template-rows: min-content min-content;
+  }
+}
+
+.contacts__text-container {
+  position: relative;
+
+  margin: 0 0 62px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: none;
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../img/svg/contacts-icon.svg");
+
+    @media (min-width: $vp-768) {
+      top: -20px;
+      right: 50px;
+
+      display: block;
+    }
+
+    @media (min-width: $vp-1150) {
+      top: 61px;
+      left: 63px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 49px 0;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 0 84px 0;
+    padding: 79px 0 0 0;
+  }
+}
+
+.contacts__block-title {
+  margin: 0 0 28px 0;
+  padding: 0 30px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 49px 0;
+    padding: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 0 34px 0;
+    padding: 0 0 0 175px;
+  }
+}
+
+.contacts__text-content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+
+  gap: 30px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding: 0;
+
+    gap: 51px;
+    grid-template-columns: 46% 45%;
+  }
+
+  @media (min-width: $vp-1150) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 175px;
+
+    gap: 30px;
+  }
+}
+
+.contacts__content-container {
+  display: grid;
+
+  grid-template-columns: 28% 72%;
+
+  @media (min-width: $vp-768) {
+    gap: 25px;
+    grid-template-columns: 19% 70%;
+  }
+}
+
+.contacts__name {
+  margin: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.contacts__description {
+  position: relative;
+
+  margin: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: $font-OpenSans;
+  color: $goshawk-grey;
+  text-decoration: none;
+
+  &--link {
+    display: flex;
+    align-self: flex-start;
+    width: min-content;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $sweet-garden-dark;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  &--link:hover {
+    color: $melbourne-cup;
+  }
+
+  &--link:focus {
+    color: $melbourne-cup;
+
+    outline: none;
+  }
+
+  &--link:active {
+    color: $melbourne-cup;
+  }
+
+  &--link:active::before {
+    opacity: 10%;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 454px;
+  margin: 0 0 41px 0;
+
+  @media (min-width: $vp-768) {
+    height: 457px;
+    margin: 0 0 55px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    position: absolute;
+
+    height: 100%;
+    margin: 0;
+
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+}
+
+.contacts__map-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.contacts__button-container {
+  align-self: center;
+  width: 100%;
+  padding: 0 30px;
+
+  grid-column: 1/2;
+
+  @media (min-width: $vp-768) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    align-self: flex-start;
+    padding: 0;
+  }
+}
+
+.contacts__button {
+  @media (min-width: $vp-768) {
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 auto 0 175px;
+  }
+}

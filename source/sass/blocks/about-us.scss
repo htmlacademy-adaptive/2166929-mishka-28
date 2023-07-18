@@ -1,0 +1,158 @@
+.about-us {
+  position: relative;
+
+  padding: 32px 0 29px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/svg/grey-pattern.svg");
+    background-size: 31px;
+    transform: translate(-50%, 0);
+
+    @media (min-width: $vp-768) {
+      height: 17px;
+
+      background-size: 77px;
+    }
+
+    @media (min-width: $vp-1150) {
+      max-width: 1050px;
+      height: 23px;
+
+      background-size: 105px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 73px 0 41px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 90px 0 44px 0;
+  }
+}
+
+.about-us__block-title {
+  margin: 0 0 28px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 41px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 0 39px 0;
+    padding: 0 0 0 175px;
+  }
+}
+
+.about-us__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 32px;
+
+  @media (min-width: $vp-768) {
+    gap: 57px 43px;
+    grid-template-columns: 43% 49%;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 0 0 0 175px;
+
+    gap: 57px 58px;
+    grid-template-columns: 43% 48%;
+  }
+}
+
+.about-us__item {
+  position: relative;
+
+  padding: 57px 0 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+  }
+
+  &--flower {
+    &::before {
+      width: 33px;
+      height: 38px;
+
+      background-image: url("../img/svg/about-us-flower-icon.svg");
+    }
+  }
+
+  &--money {
+    &::before {
+      width: 47px;
+      height: 27px;
+
+      background-image: url("../img/svg/about-us-money-icon.svg");
+    }
+  }
+
+  &--heart {
+    &::before {
+      width: 34px;
+      height: 27px;
+
+      background-image: url("../img/svg/about-us-heart-icon.svg");
+    }
+  }
+
+  &--ball {
+    &::before {
+      width: 35px;
+      height: 34px;
+
+      background-image: url("../img/svg/about-us-ball-icon.svg");
+    }
+  }
+
+  &--rocket {
+    &::before {
+      width: 55px;
+      height: 23px;
+
+      background-image: url("../img/svg/about-us-rocket-icon.svg");
+    }
+  }
+
+  &--present {
+    &::before {
+      width: 33px;
+      height: 32px;
+
+      background-image: url("../img/svg/about-us-present-icon.svg");
+    }
+  }
+}
+
+.about-us__description {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

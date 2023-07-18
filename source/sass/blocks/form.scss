@@ -1,0 +1,30 @@
+.form__description {
+  margin: 0;
+  padding: 17px 0 14px 0;
+
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $vp-768) {
+    padding: 54px 0 40px 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 99px 174px 39px 174px;
+  }
+}
+
+.form__fields {
+  padding: 14px 0 55px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 40px 0 50px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 39px 0 50px 0;
+  }
+}

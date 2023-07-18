@@ -1,0 +1,144 @@
+.form-input {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+
+    gap: 25px;
+  }
+
+  &--telephone,
+  &--email,
+  &--comment {
+    gap: 0;
+  }
+}
+
+.form-input__description {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+
+  @media (min-width: $vp-768) {
+    margin: 16px 0 0 0;
+  }
+}
+
+.form-input__input {
+  width: 100%;
+  padding: 18px 17px 17px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $font-OpenSans;
+  color: $black;
+
+  background-color: $transparent;
+  border: none;
+  border-bottom: 2px solid $goshawk-grey;
+
+  &--textarea {
+    width: 100%;
+    height: 142px;
+
+    border: 2px solid $goshawk-grey;
+
+    resize: none;
+  }
+
+  &::placeholder {
+    opacity: 30%;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 16px 18px 18px 18px;
+
+    font-size: 19px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $sweet-garden-dark;
+    outline: none;
+
+    transition: 250ms;
+  }
+
+  &--textarea:hover,
+  &--textarea:focus,
+  &--textarea:active {
+    border: 2px solid $sweet-garden-dark;
+  }
+
+  &:disabled {
+    background-color: $cold-morning;
+    border-bottom: 2px solid $goshawk-grey;
+  }
+
+  &--textarea:disabled {
+    border: 2px solid $goshawk-grey;
+  }
+}
+
+.form__input-sign {
+  position: absolute;
+
+  background-color: $black;
+  opacity: 20%;
+
+  mask-repeat: no-repeat;
+
+  &--telephone {
+    top: 7px;
+    right: 11px;
+
+    width: 25px;
+    height: 24px;
+
+    mask-image: url("../img/svg/form-input-telephone-sign.svg");
+
+    @media (min-width: $vp-768) {
+      top: 11px;
+      right: 26px;
+    }
+
+    @media (min-width: $vp-1150) {
+      top: 11px;
+      right: 8px;
+    }
+  }
+
+  &--email {
+    top: 16px;
+    right: 3px;
+
+    width: 32px;
+    height: 21px;
+
+    mask-image: url("../img/svg/form-input-email-sign.svg");
+
+    @media (min-width: $vp-768) {
+      top: 16px;
+      right: 22px;
+    }
+
+    @media (min-width: $vp-1150) {
+      top: 16px;
+      right: 4px;
+    }
+  }
+
+  .form-input__input:hover + &,
+  .form-input__input:focus + &,
+  .form-input__input:active + & {
+    background-color: $sweet-garden-dark;
+    opacity: 100%;
+
+    transition: 250ms;
+  }
+}

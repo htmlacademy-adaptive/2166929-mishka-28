@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// Глобальные стили
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+
+// Блоки
+@import "blocks/page.scss";
+@import "blocks/main.scss";
+@import "blocks/page-title.scss";
+@import "blocks/block-title.scss";
+@import "blocks/header.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";
+@import "blocks/modal.scss";
+@import "blocks/button.scss";
+@import "blocks/intro.scss";
+@import "blocks/popular-product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/video.scss";
+@import "blocks/form.scss";
+@import "blocks/fields.scss";
+@import "blocks/custom-element.scss";
+@import "blocks/form-input.scss";
