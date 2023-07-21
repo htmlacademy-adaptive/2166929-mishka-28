@@ -8,6 +8,7 @@
 
   background-image: url("../img/background/intro-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 0 -17px;
   background-size: cover;
 
   &::before {
@@ -28,8 +29,11 @@
     }
 
     @media (min-width: $vp-1150) {
-      height: 33px;
+      bottom: -1px;
 
+      height: 36px;
+
+      background-position: 138px 0;
       background-size: 125px;
     }
   }
@@ -42,6 +46,7 @@
     min-height: 500px;
 
     background-image: url("../img/background/intro-background-tablet.jpg");
+    background-position: 0 -69px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro-background-tablet@2x.jpg");
@@ -105,6 +110,12 @@
       padding: 32px 0 112px 0;
     }
   }
+
+  br {
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
 }
 
 .intro__button-list {
@@ -138,7 +149,7 @@
 
   background-color: $jamaican-jade;
 
-  &--background-color {
+  .intro__button-item:nth-child(even) & {
     background-color: $cockatoo;
   }
 

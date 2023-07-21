@@ -8,6 +8,9 @@ const initMenu = () => {
 
 const initModal = () => {
   var modalButton = document.querySelectorAll(".modal-button");
+  var modalSizeButton = document.querySelectorAll(".modal__size-button");
+  var modalSizeButtonFirst = document.querySelector(".modal__size-item:nth-child(1) .modal__size-button");
+  var modalButtonAdd = document.querySelector(".modal__button-add");
 
   if (modalButton.length > 0) {
     var modal = document.querySelector('.modal');
@@ -34,16 +37,16 @@ const initModal = () => {
       });
     };
   };
-};
-
-const initButtonSize = () => {
-  var modalSizeButton = document.querySelectorAll(".modal__size-button");
-  var modal = document.querySelector('.modal');
 
   for (let i = 0; i < modalSizeButton.length; i++)
     modalSizeButton[i].onclick = function() {
     modalSizeButton[i].classList.toggle("modal__size-button--current");
 
+    modalButtonAdd.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      modalSizeButton[i].classList.remove('modal__size-button--current');
+      modalSizeButtonFirst.classList.add('modal__size-button--current');
+    });
 
     modal.addEventListener('click', (evt) => {
       if (evt.target.closest('.modal__container--buy')) {
@@ -51,12 +54,14 @@ const initButtonSize = () => {
       }
       evt.preventDefault();
       modalSizeButton[i].classList.remove('modal__size-button--current');
+      modalSizeButtonFirst.classList.add('modal__size-button--current');
     });
 
     document.addEventListener('keydown', (evt) => {
       if (evt.key === 'Escape') {
         evt.preventDefault();
         modalSizeButton[i].classList.remove('modal__size-button--current');
+        modalSizeButtonFirst.classList.add('modal__size-button--current');
       }
     });
   };
@@ -64,4 +69,3 @@ const initButtonSize = () => {
 
 initMenu();
 initModal();
-initButtonSize();

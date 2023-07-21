@@ -14,7 +14,7 @@
   position: relative;
 
   display: flex;
-  margin: 0 auto 35px 0;
+  margin: 0 auto 36px 0;
   padding: 0 18px 0 0;
 
   font-weight: 600;
@@ -24,6 +24,45 @@
   text-transform: uppercase;
 
   background-color: $white;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding: 0;
+
+    background-color: $transparent;
+  }
+
+  .fields__fieldset--name & {
+    margin: 0 auto 29px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 17px auto 29px 0;
+    }
+  }
+
+  .fields__fieldset--telephone & {
+    margin: 0 auto 3px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 17px 0 0 0;
+    }
+  }
+
+  .fields__fieldset--email & {
+    margin: 0 auto 3px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 17px 0 0 0;
+    }
+  }
+
+  .fields__fieldset--comment & {
+    margin: 0 auto 23px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 17px 0 0 0;
+    }
+  }
 
   &::before {
     content: "";
@@ -41,19 +80,12 @@
       display: none;
     }
   }
-
-  @media (min-width: $vp-768) {
-    margin: 0;
-    padding: 0;
-
-    background-color: $transparent;
-  }
 }
 
 .fields__fieldset-container {
   position: relative;
 
-  margin: 0 0 34px 0;
+  margin: 0 0 35px 0;
 
   &::before {
     content: "";
@@ -111,7 +143,7 @@
 
       display: none;
       width: 200vw;
-      height: calc(100% + 100px);
+      height: calc(100% + 133px);
 
       background-color: $hotot-bunny;
       transform: translate(0, -50%);
@@ -143,7 +175,7 @@
   }
 
   &--telephone {
-    margin: 0 0 34px 0;
+    margin: 0 0 36px 0;
 
     @media (min-width: $vp-768) {
       margin: 0 0 24px 0;
@@ -167,9 +199,11 @@
 
   list-style: none;
 
-  gap: 54px;
+  gap: 24px;
 
   &--checkbox {
+    gap: 43px;
+
     @media (min-width: $vp-768) {
       gap: 59px 40px;
       grid-template-columns: 44% 47%;
@@ -181,8 +215,16 @@
     }
   }
 
+  @media (min-width: $vp-768) {
+    gap: 58px 40px;
+  }
+
   &--name {
-    gap: 24px;
+    gap: 22px;
+
+    @media (min-width: $vp-768) {
+      gap: 24px;
+    }
   }
 }
 
@@ -190,7 +232,7 @@
   display: flex;
   flex-direction: column;
 
-  gap: 30px;
+  gap: 31px;
 
   @media (min-width: $vp-768) {
     flex-direction: row-reverse;

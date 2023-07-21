@@ -8,25 +8,33 @@
 
 .custom-element__icon {
   position: absolute;
-  top: -12px;
+  top: -10px;
 
-  width: 41px;
-  height: 41px;
+  width: 38px;
+  height: 38px;
 
   background-color: $transparent;
   border: 2px solid $goshawk-grey;
   cursor: pointer;
 
   &--radio {
+    top: -4px;
+
+    width: 41px;
+    height: 41px;
+
     border-radius: 50%;
+  }
+
+  &--top {
+    top: -11px;
   }
 
   .custom-element__input[type="radio"]:checked + &::after {
     content: "";
     position: absolute;
-    top: 11px;
-    left: 11px;
-    z-index: 1111;
+    top: 10px;
+    left: 10px;
 
     width: 17px;
     height: 17px;
@@ -68,7 +76,8 @@
   }
 
   @media (min-width: $vp-768) {
-    top: -19px;
+    top: -16px;
+    left: 1px;
 
     width: 51px;
     height: 51px;
@@ -100,4 +109,11 @@
   font-size: 17px;
   line-height: 18px;
   color: $black;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 0 78px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

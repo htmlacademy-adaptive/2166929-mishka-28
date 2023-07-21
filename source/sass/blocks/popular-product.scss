@@ -1,5 +1,5 @@
 .popular-product {
-  padding: 31px 0 36px 0;
+  padding: 31px 0 33px 0;
 
   @media (min-width: $vp-768) {
     padding: 40px 0 52px 0;
@@ -30,15 +30,18 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin: 0 0 35px 0;
-    padding: 61px 0 0 46px;
+    padding: 61px 0 0 31px;
 
-    gap: 26px;
+    gap: 31px;
   }
 }
 
 .popular-product__block-title {
+  margin: 0 0 5px 0;
+
   @media (min-width: $vp-768) {
     max-width: 500px;
+    margin: 0;
   }
 
   @media (min-width: $vp-1150) {
@@ -57,7 +60,7 @@
 
   @media (min-width: $vp-768) {
     max-width: 100px;
-    margin: 6px 0 0 0;
+    margin: 5px 13px 0 0;
 
     text-align: center;
   }
@@ -75,56 +78,67 @@
 }
 
 .popular-product__description {
-  margin: 0 0 28px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 48px 0;
+    margin: 0 0 41px 0;
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 0 60px 0;
+    margin: 0 0 51px 0;
   }
 }
 
 .popular-product__about-list {
-  margin: 0 0 28px 0;
+  margin: 0 0 31px 0;
   padding: 0;
 
   list-style: none;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 57px 0;
+    margin: 0 0 61px 0;
   }
 
   @media (min-width: $vp-1150) {
-    margin: 0 0 109px 0;
+    margin: 0 0 111px 0;
   }
 }
 
 .popular-product__about-item {
   display: grid;
-  padding: 12px 0;
+  padding: 7px 0;
 
   border-bottom: 1px solid $coronation;
 
-  grid-template-columns: 37% 43%;
+  grid-template-columns: 38% 63%;
 
   @media (min-width: $vp-768) {
-    grid-template-columns: 33% 66%;
+    padding: 9px 0;
+
+    grid-template-columns: 34% 66%;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 10px 0;
   }
 }
 
 .popular-product__about-title,
 .popular-product__about-description {
   margin: 0;
+
+  @media (min-width: $vp-768) {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .popular-product__image-container {
   z-index: -1;
 
   width: 100%;
-  height: 325px;
-  margin: 0 0 25px 0;
+  height: 315px;
+  margin: 0 0 26px 0;
 
   @media (min-width: $vp-768) {
     position: absolute;
@@ -156,16 +170,16 @@
   flex-direction: column;
   align-items: center;
 
-  gap: 24px;
+  gap: 23px;
 
   @media (min-width: $vp-768) {
-    width: 43%;
+    width: 43.5%;
 
-    gap: 33px;
+    gap: 32px;
   }
 
   @media (min-width: $vp-1150) {
-    width: 44%;
+    width: 44.5%;
     padding: 0 0 0 175px;
   }
 }

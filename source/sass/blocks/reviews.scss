@@ -1,8 +1,8 @@
 .reviews {
-  padding: 29px 0 45px 0;
+  padding: 30px 0 43px 0;
 
   @media (min-width: $vp-768) {
-    padding: 120px 0 115px 0;
+    padding: 121px 0 115px 0;
   }
 
   @media (min-width: $vp-1150) {
@@ -21,7 +21,7 @@
     z-index: -1;
 
     display: none;
-    width: 44%;
+    width: 45.5%;
     height: calc(100% + 126px);
 
     background-image: url("../img/background/reviews-image-tablet.jpg");
@@ -42,10 +42,10 @@
 }
 
 .reviews__block-title {
-  margin: 0 0 14px 0;
+  margin: 0 0 15px 0;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 38px 0;
+    margin: 0 0 39px 0;
   }
 
   @media (min-width: $vp-1150) {
@@ -55,7 +55,7 @@
 }
 
 .reviews__quote-container {
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -69,8 +69,10 @@
 .reviews__description {
   margin: 0 0 33px 0;
 
+  line-height: 30px;
+
   @media (min-width: $vp-768) {
-    margin: 0 0 61px 0;
+    margin: 0 0 62px 0;
   }
 
   @media (min-width: $vp-1150) {
@@ -95,12 +97,18 @@
   }
 }
 
+.reviews__nickname {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
+
 .reviews__slider-button-list {
   position: relative;
 
   display: flex;
   width: 100%;
-  margin: 0 0 38px 0;
+  margin: 0 0 35px 0;
   padding: 0;
 
   list-style: none;
@@ -126,8 +134,8 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
-    right: 50px;
-    bottom: 0;
+    right: 69px;
+    bottom: 14px;
 
     width: auto;
     margin: 0;
@@ -159,13 +167,15 @@
   cursor: pointer;
 
   mask-image: url("../img/svg/reviews-arrow.svg");
-  mask-position: 43px 50%;
+  mask-position: 37px 50%;
   mask-repeat: no-repeat;
 
   &--right {
     margin: 0 0 0 auto;
 
     transform: rotate(180deg);
+
+    mask-position: 41px 50%;
   }
 
   @media (min-width: $vp-768) {
@@ -191,7 +201,11 @@
 .reviews__button {
   @media (min-width: $vp-768) {
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    top: 1px;
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  padding: 25px 0 22px 0;
+  padding: 28px 0 22px 0;
 
   background-color: $hotot-bunny;
 
@@ -29,6 +29,14 @@
 
 .footer__social {
   margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    margin: 7px 71px 0 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin: -5px 80px 0 0;
+  }
 }
 
 .footer__link {

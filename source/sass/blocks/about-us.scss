@@ -1,7 +1,7 @@
 .about-us {
   position: relative;
 
-  padding: 32px 0 29px 0;
+  padding: 39px 0 29px 0;
 
   &::before {
     content: "";
@@ -13,12 +13,14 @@
     height: 7px;
 
     background-image: url("../img/svg/grey-pattern.svg");
-    background-size: 31px;
+    background-position: 112px 0;
+    background-size: 32px;
     transform: translate(-50%, 0);
 
     @media (min-width: $vp-768) {
       height: 17px;
 
+      background-position: 114px 0;
       background-size: 77px;
     }
 
@@ -26,6 +28,7 @@
       max-width: 1050px;
       height: 23px;
 
+      background-position: 105px 0;
       background-size: 105px;
     }
   }
@@ -59,25 +62,25 @@
 
   list-style: none;
 
-  gap: 32px;
+  gap: 29px;
 
   @media (min-width: $vp-768) {
-    gap: 57px 43px;
+    gap: 54px 47px;
     grid-template-columns: 43% 49%;
   }
 
   @media (min-width: $vp-1150) {
     padding: 0 0 0 175px;
 
-    gap: 57px 58px;
-    grid-template-columns: 43% 48%;
+    gap: 54px 58px;
+    grid-template-columns: 33.5% 34%;
   }
 }
 
 .about-us__item {
   position: relative;
 
-  padding: 57px 0 0 0;
+  padding: 54px 0 0 0;
 
   &::before {
     content: "";
@@ -90,6 +93,9 @@
 
   &--flower {
     &::before {
+      top: 0;
+      left: 8px;
+
       width: 33px;
       height: 38px;
 
@@ -99,33 +105,60 @@
 
   &--money {
     &::before {
+      top: 0;
+      left: 0;
+
       width: 47px;
       height: 27px;
 
       background-image: url("../img/svg/about-us-money-icon.svg");
     }
+
+    @media (min-width: $vp-768) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
   }
 
   &--heart {
     &::before {
+      top: 7px;
+      left: 7px;
+
       width: 34px;
       height: 27px;
 
       background-image: url("../img/svg/about-us-heart-icon.svg");
     }
+
+    @media (min-width: $vp-768) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
   }
 
   &--ball {
     &::before {
+      top: 4px;
+      left: 2px;
+
       width: 35px;
       height: 34px;
 
       background-image: url("../img/svg/about-us-ball-icon.svg");
     }
+
+    @media (min-width: $vp-768) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
   }
 
   &--rocket {
     &::before {
+      top: 4px;
+      left: -6px;
+
       width: 55px;
       height: 23px;
 
@@ -135,11 +168,18 @@
 
   &--present {
     &::before {
+      top: 3px;
+      left: 3px;
+
       width: 33px;
       height: 32px;
 
       background-image: url("../img/svg/about-us-present-icon.svg");
     }
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 57px 0 0 0;
   }
 }
 
