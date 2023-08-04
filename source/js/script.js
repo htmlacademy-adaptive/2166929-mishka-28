@@ -35,6 +35,11 @@ const initModal = () => {
           modal.classList.toggle('modal--close');
         }
       });
+
+      modalButtonAdd.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        modal.classList.toggle('modal--close');
+      });
     };
   };
 

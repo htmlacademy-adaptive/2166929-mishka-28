@@ -66,14 +66,15 @@
 
   @media (min-width: $vp-768) {
     gap: 54px 47px;
-    grid-template-columns: 43% 49%;
+    grid-template-columns: 43% 50%;
+    grid-template-rows: auto min-content;
   }
 
   @media (min-width: $vp-1150) {
     padding: 0 0 0 175px;
+    grid-template-columns: 35% 50%;
 
-    gap: 54px 58px;
-    grid-template-columns: 33.5% 34%;
+    gap: 54px 44px;
   }
 }
 
@@ -89,6 +90,14 @@
     left: 0;
 
     background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(2n + 2) {
+    order: 1;
+
+    @media (min-width: $vp-768) {
+      order: 0;
+    }
   }
 
   &--flower {
@@ -113,11 +122,6 @@
 
       background-image: url("../img/svg/about-us-money-icon.svg");
     }
-
-    @media (min-width: $vp-768) {
-      grid-column: 1/2;
-      grid-row: 2/3;
-    }
   }
 
   &--heart {
@@ -130,11 +134,6 @@
 
       background-image: url("../img/svg/about-us-heart-icon.svg");
     }
-
-    @media (min-width: $vp-768) {
-      grid-column: 1/2;
-      grid-row: 3/4;
-    }
   }
 
   &--ball {
@@ -146,11 +145,6 @@
       height: 34px;
 
       background-image: url("../img/svg/about-us-ball-icon.svg");
-    }
-
-    @media (min-width: $vp-768) {
-      grid-column: 2/3;
-      grid-row: 1/2;
     }
   }
 

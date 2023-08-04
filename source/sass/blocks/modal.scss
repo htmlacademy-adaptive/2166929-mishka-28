@@ -110,11 +110,20 @@
     transition: 250ms;
   }
 
+  &:focus {
+    border: 2px solid $black;
+    outline: none;
+  }
+
   &:active {
     border: 2px solid $jamaican-jade;
   }
 
   &--current:hover {
+    border: 2px solid $jamaican-jade;
+  }
+
+  &--current:focus {
     border: 2px solid $jamaican-jade;
   }
 }
@@ -138,6 +147,13 @@
 
     transition: 250ms;
   }
+
+  &:focus {
+    background-color: $cockatoo;
+    outline: none;
+    opacity: 30%;
+  }
+
 
   &:active {
     background-color: $jamaican-jade;

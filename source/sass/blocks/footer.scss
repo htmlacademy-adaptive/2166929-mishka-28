@@ -22,8 +22,25 @@
   display: none;
   width: min-content;
 
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: $vp-768) {
     display: block;
+  }
+}
+
+.footer__logo-icon {
+  .footer__logo:hover &,
+  .footer__logo:focus & {
+    fill: $melbourne-cup;
+  }
+
+  .footer__logo:active & {
+    opacity: 30%;
+
+    fill: $melbourne-cup;
   }
 }
 
@@ -31,10 +48,10 @@
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
-    margin: 7px 71px 0 0;
+    margin: -6px 71px 0 0;
   }
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1150) {
     margin: -5px 80px 0 0;
   }
 }
@@ -54,8 +71,34 @@
   @media (min-width: $vp-768) {
     margin: 0 0 0 auto;
   }
+
+  @media (min-width: $vp-1150) {
+    gap: 29px;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .footer__link-text {
+  max-width: 200px;
   margin: 7px 0 0 0;
+
+  @media (min-width: $vp-768) {
+    max-width: 120px;
+  }
+}
+
+.footer__link-logo {
+  .footer__link:hover & {
+    fill: $melbourne-cup;
+  }
+
+  .footer__link:focus &,
+  .footer__link:active & {
+    opacity: 30%;
+
+    fill: $melbourne-cup;
+  }
 }

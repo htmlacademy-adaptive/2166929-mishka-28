@@ -1,12 +1,12 @@
 .catalog {
-  padding: 30px 0 38px 0;
+  padding: 30px 0 21px 0;
 
   @media (min-width: $vp-768) {
     padding: 67px 0 26px 0;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 77px 0 28px 0;
+    padding: 112px 0 28px 0;
   }
 }
 
@@ -20,7 +20,7 @@
   gap: 30px;
 
   @media (min-width: $vp-768) {
-    gap: 54px;
+    gap: 52px;
   }
 
   @media (min-width: $vp-1150) {

@@ -104,8 +104,13 @@
     }
   }
 
+  @media (min-width: $vp-768) {
+    padding: 27px 31px 26px 32px;
+  }
+
   @media (min-width: $vp-1150) {
     height: 100%;
+    padding: 27px 31px 26px 26px;
   }
 }
 
@@ -119,7 +124,13 @@
   color: $black;
   text-decoration: none;
 
+  &--margin {
+    margin: -4px 0 11px 0;
+  }
+
   @media (min-width: $vp-768) {
+    margin: 0 0 7px 0;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -154,6 +165,10 @@
     font-size: 15px;
     line-height: 30px;
   }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 0 12px 0;
+  }
 }
 
 .card__price-container {
@@ -181,6 +196,8 @@
 }
 
 .card__price {
+  max-width: 150px;
+
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;

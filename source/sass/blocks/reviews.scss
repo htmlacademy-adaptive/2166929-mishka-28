@@ -45,10 +45,12 @@
   margin: 0 0 15px 0;
 
   @media (min-width: $vp-768) {
+    max-width: 300px;
     margin: 0 0 39px 0;
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 700px;
     margin: 0 0 35px 0;
     padding: 0 0 0 175px;
   }
@@ -89,10 +91,14 @@
   color: $black;
 
   @media (min-width: $vp-768) {
+    max-width: 500px;
+
     font-size: 18px;
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 600px;
+
     font-size: 17px;
   }
 }
@@ -101,12 +107,22 @@
   font-style: normal;
   font-size: 17px;
   line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    display: inline-flex;
+    max-width: 400px;
+  }
+
+  @media (min-width: $vp-1150) {
+    max-width: 600px;
+  }
 }
 
 .reviews__slider-button-list {
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 0 35px 0;
   padding: 0;
@@ -138,11 +154,12 @@
     bottom: 14px;
 
     width: auto;
+    max-width: 200px;
     margin: 0;
 
     border: none;
 
-    gap: 37px;
+    gap: 20px 37px;
   }
 }
 
@@ -203,6 +220,8 @@
     position: absolute;
     top: -2px;
     right: 50px;
+
+    max-width: 300px;
   }
 
   @media (min-width: $vp-1150) {

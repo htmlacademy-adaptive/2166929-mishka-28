@@ -6,6 +6,7 @@
   align-items: center;
   min-height: 400px;
 
+  background-color: $doctor;
   background-image: url("../img/background/intro-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 -17px;
@@ -67,6 +68,13 @@
     background-color: $hotot-bunny;
     background-image: none;
   }
+
+  &--inner::before {
+    @media (min-width: $vp-1150) {
+      background-position: 114px 0;
+      background-size: 115px;
+    }
+  }
 }
 
 .intro__container {
@@ -85,7 +93,7 @@
 .intro__page-title {
   max-width: 350px;
   margin: 0 auto;
-  padding: 73px 30px 120px 30px;
+  padding: 72px 30px 120px 30px;
 
   text-align: center;
 
@@ -201,6 +209,7 @@
   }
 
   @media (min-width: $vp-768) {
+    height: 100%;
     padding: 25px 36px 46px 36px;
 
     font-size: 20px;
@@ -208,7 +217,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 25px 37px 51px 37px;
+    padding: 25px 110px 51px 37px;
   }
 
   &:hover {

@@ -103,6 +103,7 @@
   padding: 0 30px;
 
   @media (min-width: $vp-768) {
+    max-width: 500px;
     margin: 0 0 49px 0;
     padding: 0;
   }
@@ -204,6 +205,12 @@
     line-height: 30px;
   }
 
+  @media (min-width: $vp-1150) {
+    max-width: 300px;
+
+    grid-column: 2/3;
+  }
+
   &--link:hover {
     color: $melbourne-cup;
   }
@@ -298,6 +305,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 300px;
     margin: 0 auto 0 175px;
   }
 }
