@@ -28,6 +28,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/reviews-image-tablet@2x.jpg");
+    }
+
     @media (min-width: $vp-768) {
       display: block;
     }
