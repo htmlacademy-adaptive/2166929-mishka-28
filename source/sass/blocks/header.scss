@@ -295,7 +295,7 @@
   display: flex;
   margin: 0 0 0 46px;
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $black;
@@ -357,7 +357,7 @@
 .header__submenu-link {
   display: flex;
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: $black;
@@ -508,7 +508,7 @@
   display: flex;
   padding: 0 0 0 46px;
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $black;
@@ -603,6 +603,23 @@
 
   @media (min-width: $vp-768) {
     display: none;
+  }
+
+  &--basket {
+    @media (min-width: $vp-768) {
+      display: block;
+    }
+  }
+
+  .header__link:hover &,
+  .header__link:focus & {
+    opacity: 60%;
+
+    transition: 250ms;
+  }
+
+  .header__link:active & {
+    opacity: 30%;
   }
 }
 

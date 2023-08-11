@@ -55,14 +55,14 @@
   }
 
   @media (min-width: $vp-1150) {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
 
 .popular-product__block-subtitle {
   margin: 0;
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: $jamaican-jade;
@@ -205,7 +205,7 @@
 .popular-product__price {
   margin: 0;
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 
