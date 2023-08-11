@@ -1,0 +1,25 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $font-OpenSans;
+  color: $goshawk-grey;
+
+  background-color: $white;
+
+  @media (min-width: $vp-768) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

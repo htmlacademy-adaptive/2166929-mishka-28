@@ -1,0 +1,121 @@
+.custom-element {
+  position: relative;
+
+  display: inline-flex;
+
+  cursor: pointer;
+}
+
+.custom-element__icon {
+  position: absolute;
+  top: -10px;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: $transparent;
+  border: 2px solid $goshawk-grey;
+  cursor: pointer;
+
+  &--radio {
+    top: -4px;
+
+    width: 41px;
+    height: 41px;
+
+    border-radius: 50%;
+  }
+
+  &--top {
+    top: -11px;
+  }
+
+  .custom-element__input[type="radio"]:checked + &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 17px;
+    height: 17px;
+
+    background-color: $sweet-garden-dark;
+    border-radius: 50%;
+
+    @media (min-width: $vp-768) {
+      top: 14px;
+      left: 14px;
+
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  .custom-element__input[type="checkbox"]:checked + &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 7px;
+
+    width: 23px;
+    height: 16px;
+
+    background-image: url("../img/svg/custom-checkbox-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $vp-768) {
+      top: 12px;
+      left: 10px;
+
+      width: 31px;
+      height: 22px;
+
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    top: -16px;
+    left: 1px;
+
+    width: 51px;
+    height: 51px;
+  }
+
+  .custom-element:hover & {
+    border: 2px solid $sweet-garden-dark;
+  }
+
+  .custom-element__input:focus + & {
+    border: 2px solid $sweet-garden-dark;
+    outline: none;
+  }
+
+  .custom-element:active & {
+    border: 2px solid $brainstem-grey;
+  }
+
+  .custom-element__input:disabled + & {
+    background-color: $cold-morning;
+    border: 2px solid $goshawk-grey;
+  }
+}
+
+.custom-element__input-label {
+  max-width: 250px;
+  padding: 0 0 0 60px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+
+  @media (min-width: $vp-768) {
+    max-width: 100%;
+    padding: 0 0 0 82px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

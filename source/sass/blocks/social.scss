@@ -1,0 +1,55 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  gap: 29px;
+}
+
+.social-link {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+
+  background-color: $abaddon-black;
+
+  mask-position: 50%;
+  mask-repeat: no-repeat;
+
+  &--vk {
+    mask-image: url("../img/svg/social-vk-icon.svg");
+  }
+
+  &--youtube {
+    mask-image: url("../img/svg/social-youtube-icon.svg");
+  }
+
+  &--telegram {
+    mask-image: url("../img/svg/social-telegram-icon.svg");
+  }
+
+  &:hover {
+    background-color: $melbourne-cup;
+
+    transition: 250ms;
+  }
+
+  &:focus {
+    background-color: $melbourne-cup;
+    opacity: 100%;
+  }
+
+  &:active {
+    background-color: $melbourne-cup;
+    opacity: 30%;
+  }
+}
