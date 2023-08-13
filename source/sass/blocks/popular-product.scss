@@ -156,7 +156,8 @@
   margin: 0 0 26px 0;
 
   @media (min-width: $vp-768) {
-    min-width: 212px;
+    display: flex;
+    min-width: 334px;
     height: calc(100% - 14px);
     margin: 11px 0 0 0;
 

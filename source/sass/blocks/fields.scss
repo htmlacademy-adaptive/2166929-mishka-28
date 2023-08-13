@@ -11,7 +11,7 @@
 }
 
 .fields__title {
-  display: flex;
+  max-width: 300px;
   margin: 0 auto 33px 0;
   padding: 0 18px 0 0;
 
@@ -20,6 +20,8 @@
   line-height: 16px;
   color: $jamaican-jade;
   text-transform: uppercase;
+
+  background-color: $white;
 
   @media (min-width: $vp-768) {
     margin: 0;
@@ -73,6 +75,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 200px;
     padding: 0 0 0 61px;
   }
 }
@@ -128,6 +131,7 @@
     position: absolute;
     top: 8px;
     left: 60px;
+    z-index: -1;
 
     width: calc(100% - 60px);
     height: 1px;
@@ -223,6 +227,7 @@
 
 .fields__list {
   display: grid;
+  align-self: flex-start;
   margin: 0;
   padding: 0;
 

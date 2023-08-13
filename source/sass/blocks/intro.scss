@@ -9,8 +9,8 @@
   background-color: $doctor;
   background-image: url("../img/background/intro-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -17px;
-  background-size: cover;
+  background-position: center bottom 5px;
+  background-size: 320px 500px;
 
   &::before {
     content: "";
@@ -47,7 +47,8 @@
     min-height: 500px;
 
     background-image: url("../img/background/intro-background-tablet.jpg");
-    background-position: 0 -69px;
+    background-position: center bottom 12px;
+    background-size: 768px 746px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro-background-tablet@2x.jpg");
@@ -56,6 +57,8 @@
 
   @media (min-width: $vp-1150) {
     background-image: url("../img/background/intro-background-desktop.jpg");
+    background-position: center bottom 16px;
+    background-size: 1150px 746px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro-background-desktop@2x.jpg");
@@ -227,12 +230,22 @@
     transform: translate(0, -4.7px);
 
     @media (min-width: $vp-768) {
-      height: 100%;
+      height: calc(100% + 3.5px);
 
       transform: translate(0, -5px);
 
       transition: 250ms;
     }
+
+    @media (min-width: $vp-1150) {
+      height: calc(100% + 5px);
+    }
+  }
+
+  .intro__button-item:nth-child(even) &:hover,
+  .intro__button-item:nth-child(even) &:focus,
+  .intro__button-item:nth-child(even) &:active {
+    background-color: $melbourne-cup;
   }
 
   &:hover::before {
@@ -254,17 +267,5 @@
 
   &:active::before {
     opacity: 30%;
-  }
-
-  &--background-color:hover {
-    background-color: $melbourne-cup;
-  }
-
-  &--background-color:focus {
-    background-color: $melbourne-cup;
-  }
-
-  &--background-color:active {
-    background-color: $melbourne-cup;
   }
 }
