@@ -1,4 +1,5 @@
 .footer {
+  margin: auto 0 0 0;
   padding: 28px 0 22px 0;
 
   background-color: $hotot-bunny;
@@ -18,16 +19,23 @@
   }
 }
 
-.footer__logo {
+.footer__logo-container {
   display: none;
+  flex-wrap: wrap;
+  max-width: 300px;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+}
+
+.footer__logo {
   width: min-content;
 
   &:focus {
     outline: none;
-  }
-
-  @media (min-width: $vp-768) {
-    display: block;
   }
 }
 

@@ -144,8 +144,10 @@
   grid-template-columns: 29% 72%;
 
   @media (min-width: $vp-768) {
+    align-self: flex-start;
+
     gap: 20px;
-    grid-template-columns: 19% 74%;
+    grid-template-columns: 19.3% 74%;
   }
 }
 
@@ -159,6 +161,8 @@
   @media (min-width: $vp-768) {
     font-size: 17px;
     line-height: 30px;
+
+    grid-column: 1/2;
   }
 }
 
@@ -203,12 +207,12 @@
   @media (min-width: $vp-768) {
     font-size: 17px;
     line-height: 30px;
+
+    grid-column: 2/3;
   }
 
   @media (min-width: $vp-1150) {
     max-width: 300px;
-
-    grid-column: 2/3;
   }
 
   &--link:hover {

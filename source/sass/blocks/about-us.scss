@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 73px 0 41px 0;
+    padding: 73px 0 42px 0;
   }
 
   @media (min-width: $vp-1150) {
@@ -65,7 +65,7 @@
   gap: 29px;
 
   @media (min-width: $vp-768) {
-    gap: 54px 47px;
+    gap: 52px 47px;
     grid-template-columns: 43% 50%;
     grid-template-rows: auto min-content;
   }
