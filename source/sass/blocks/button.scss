@@ -63,6 +63,7 @@
   &:active {
     color: $namara-grey;
 
+    background-color: $goshawk-grey;
     outline: none;
   }
 
@@ -70,7 +71,7 @@
     color: $namara-grey;
 
     background-color: $cold-morning;
-    border: none;
+    border: 2px solid $cold-morning;
 
     pointer-events: none;
   }

@@ -28,6 +28,8 @@
     padding: 0;
 
     background-color: $transparent;
+
+    grid-column: 1;
   }
 
   .fields__fieldset--type & {
@@ -259,6 +261,12 @@
     @media (min-width: $vp-768) {
       gap: 24px;
     }
+  }
+}
+
+.fields__label {
+  @media (min-width: $vp-768) {
+    grid-column: 2;
   }
 }
 

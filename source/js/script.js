@@ -7,10 +7,10 @@ const initMenu = () => {
 };
 
 const initModal = () => {
-  var modalButton = document.querySelectorAll(".modal-button");
-  var modalSizeButton = document.querySelectorAll(".modal__size-button");
-  var modalSizeButtonFirst = document.querySelector(".modal__size-item:nth-child(1) .modal__size-button");
-  var modalButtonAdd = document.querySelector(".modal__button-add");
+  var modalButton = document.querySelectorAll('.modal-button');
+  var modalSizeButton = document.querySelectorAll('.modal__size-button');
+  var modalSizeButtonFirst = document.querySelector('.modal__size-item:nth-child(1) .modal__size-button');
+  var modalButtonAdd = document.querySelector('.modal__button-add');
 
   if (modalButton.length > 0) {
     var modal = document.querySelector('.modal');
@@ -45,7 +45,7 @@ const initModal = () => {
 
   for (let i = 0; i < modalSizeButton.length; i++)
     modalSizeButton[i].onclick = function() {
-    modalSizeButton[i].classList.toggle("modal__size-button--current");
+    modalSizeButton[i].classList.toggle('modal__size-button--current');
 
     modalButtonAdd.addEventListener('click', (evt) => {
       evt.preventDefault();
